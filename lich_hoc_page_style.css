@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000; /* Đổi màu chữ thành đen */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#img_logo_header {
+    margin-right: 10px; /* Giảm margin để không bị chồng lấn */
+}
+
+#navigateButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#login_page_button {
+    width: 100px; /* Giảm kích thước của button đăng nhập */
+    height: auto;
+    margin-left: 10px; /* Giảm margin để căn chỉnh hợp lý */
+}
+
+#schedule-table {
+    margin: 20px auto;
+    max-width: 100%; /* Thay đổi max-width để phù hợp với màn hình nhỏ hơn */
+    overflow-x: auto; /* Cho phép cuộn ngang */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+#schedule-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#schedule-table th, #schedule-table td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+#schedule-table th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #e9e9e9;
+    color: rgb(135, 135, 135);
+    text-align: center;
+    padding: 10px; /* Giảm padding để không chiếm quá nhiều không gian */
+    position: relative;
+    bottom: 0;
+    width: 90%;
+    box-shadow: 1px 2px 4px rgba(0.1, 0, 0, 0.1);
+}
+
+
+#img_lich_hoc {
+    width: 380px;
+}

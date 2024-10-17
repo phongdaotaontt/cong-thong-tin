@@ -1,0 +1,204 @@
+/* CSS for mobile devices */
+@media only screen and (max-width: 600px) {
+    #img_logo_header {
+        margin-right: 0; /* Đặt lại margin để không bị tràn */
+    }
+
+    #login_page_button {
+        width: 100px; /* Giảm kích thước nút đăng nhập */
+        margin-left: 0; /* Đặt lại margin để không bị tràn */
+    }
+
+    main {
+        flex-direction: column; /* Đặt lại hướng của flex container */
+        align-items: center; /* Canh giữa các phần tử trong main */
+        margin: 20px; /* Thay đổi margin để tạo khoảng cách */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Đảm bảo hình ảnh phù hợp với màn hình nhỏ */
+        margin-right: 0; /* Đặt lại margin để không bị tràn */
+    }
+
+    .button {
+        width: 100%; /* Làm cho button chiếm toàn bộ chiều rộng */
+        margin-bottom: 15px; /* Tăng khoảng cách giữa các button */
+    }
+
+    #img-add-more {
+        width: 100%; /* Đảm bảo hình ảnh phù hợp với màn hình nhỏ */
+    }
+}
+
+/* General CSS */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff; /* Màu nền là trắng */
+    color: #007bff; /* Màu chữ là xanh */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Thêm shadow */
+}
+
+#navigateButton {
+    background-color: transparent; /* Đặt màu nền trong suốt */
+    border: none; /* Loại bỏ đường viền */
+    padding: 0; /* Loại bỏ padding để hình ảnh fit vào nút */
+    cursor: pointer; /* Biến con trỏ chuột thành dạng chỉ mũi tên */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Để main chiếm không gian còn lại */
+    margin: 0 200px; /* Loại bỏ khoảng cách bên ngoài của main */
+    padding: 20px; /* Thêm padding để tạo khoảng cách trong */
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 70%; /* Hình ảnh sẽ không vượt quá kích thước của container */
+    height: auto; /* Giữ tỷ lệ chiều rộng/chiều cao khi thay đổi kích thước */
+    margin-right: 20px; /* Khoảng cách giữa hình ảnh và container button */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    width: 300px;
+    height: 115px;
+    padding: 10px;
+    background-color: #007bff; /* Màu nền của button */
+    color: white;
+    text-align: center;
+    margin-bottom: 10px; /* Khoảng cách giữa các button */
+    cursor: pointer;
+    border-radius: 5px; /* Bo tròn góc của button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm shadow */
+    position: relative; /* Cần để định vị dòng chữ bên dưới */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Màu nền của button khi hover */
+}
+
+.button-detail {
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+}
+
+#img-add-more {
+    width: 500px;
+    height: auto;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #e9e9e9; /* Màu xám nhạt */
+    color: rgb(135, 135, 135);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 90%;
+    box-shadow: 1px 2px 4px rgba(0.1, 0, 0, 0.1); /* Thêm shadow */
+}
+
+
+/* CSS for mobile devices */
+@media only screen and (max-width: 600px) {
+    .image-container {
+        flex-direction: column; /* Đổi hướng của flex container thành dọc */
+        align-items: center; /* Canh giữa các phần tử trong flex container */
+    }
+
+    .image-container img {
+        width: 90%; /* Đặt chiều rộng của hình là 90% so với chiều rộng của thiết bị */
+        margin-bottom: 20px; /* Khoảng cách giữa hình và button */
+    }
+
+    .button-container {
+        width: 100%; /* Làm cho button container chiếm toàn bộ chiều rộng */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Canh giữa các button */
+    }
+
+    .button {
+        width: 90%; /* Đặt chiều rộng của button là 90% so với chiều rộng của thiết bị */
+        margin-bottom: 15px; /* Khoảng cách giữa các button */
+    }
+}
+
+/* General CSS */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Để main chiếm không gian còn lại */
+    margin: 0 200px; /* Loại bỏ khoảng cách bên ngoài của main */
+    padding: 20px; /* Thêm padding để tạo khoảng cách trong */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 400px;
+}
+
+.image-container img {
+    /* width: 200px; */
+    max-width: 90%;
+    height: auto; /* Giữ tỷ lệ chiều rộng/chiều cao khi thay đổi kích thước */
+    margin-right: 20px; /* Khoảng cách giữa hình ảnh và container button */
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.button {
+    margin: 10px;
+    width: 150px;
+    height: 75px;
+    padding: 10px;
+    background-color: #007bff; /* Màu nền của button */
+    color: white;
+    text-align: center;
+    margin-bottom: 10px; /* Khoảng cách giữa các button */
+    cursor: pointer;
+    border-radius: 5px; /* Bo tròn góc của button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm shadow */
+    position: relative; /* Cần để định vị dòng chữ bên dưới */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Màu nền của button khi hover */
+}
+
+.button-detail {
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+}

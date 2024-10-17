@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng Thông Tin Sinh Viên</title>
+    <link rel="stylesheet" href="./style/home_page_style.css">
+</head>
+<body>
+    <header>
+        <button id="navigateButton">
+            <img id="img_logo_header" src="https://phongdaotao.ntt.edu.vn/Content/AConfig/images/sv_logo_dashboard.png" alt="Header Image">
+        </button>
+        <img id="login_page_button" src="./img/user_avata.png" alt="Button Image">
+    </header>
+    <h2 style="text-align: center; color: #838383; font-size: medium;">Bảng theo dõi dành cho phụ huynh</h2>
+    <main>
+        <div class="image-container">
+            <img id="img_user" src="./img/user_infomation.png" alt="Your Image">
+            <div class="button-container">
+                <div class="button" onclick="navigateToLichHoc('lich_hoc_page.html')">
+                    Lịch học trong tuần
+                    <div class="button-detail">Xem thông tin chi tiết</div>
+                </div>
+                <div class="button" onclick="navigateToKQHoc('ket_qua_hoc_page.html')">
+                    Kết quả học tập
+                    <div class="button-detail">Xem thông tin chi tiết</div>
+                </div>
+            </div>
+        </div>
+    </main> 
+
+    <footer>
+        <p>Copyright &copy; 2021 Trường Đại học Nguyễn Tất Thành - Phòng Quản lý Đào tạo</p>
+        <p>Địa chỉ: Văn phòng tại Quận 4: số 300A đường Nguyễn Tất Thành, phường 13, quận 4, TP. HCM</p>
+        <p>Văn phòng tại Quận 12: số 331, quốc lộ 1A, phường An Phú Đông, quận 12, TP. HCM</p>
+        <p>Email: phongdaotao@ntt.edu.vn</p>
+    </footer>
+
+    <script>
+        document.getElementById('navigateButton').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+
+        function navigateToLichHoc(url) {
+            // window.location.href = url;
+            // alert('lichHoc');
+            window.location.href = url;
+        }
+
+        function navigateToKQHoc(url) {
+            // window.location.href = url;
+            // alert('KQ Hoc');
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng Thông Tin Sinh Viên</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <img src="https://phongdaotao.ntt.edu.vn/Content/AConfig/images/sv_header_login.png" alt="Header Image">
+    </header>
+
+    <main>
+        <div class="image-block">
+            <img src="https://ntt.edu.vn/wp-content/uploads/2024/07/Han-cuoi-den-147-2048x864.png" alt="Block Image">
+        </div>
+        <div class="login-block">
+            <h2>Đăng Nhập</h2>
+            <form id="loginForm">
+                <label for="username">Nhập mã sinh viên:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Nhập mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Đăng Nhập</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2021 Trường Đại học Nguyễn Tất Thành - Phòng Quản lý Đào tạo</p>
+        <p>Địa chỉ: Văn phòng tại Quận 4: số 300A đường Nguyễn Tất Thành, phường 13, quận 4, TP. HCM</p>
+        <p>Văn phòng tại Quận 12: số 331, quốc lộ 1A, phường An Phú Đông, quận 12, TP. HCM</p>
+        <p>Email: phongdaotao@ntt.edu.vn</p>
+    </footer>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === '2200009883' && password === 'baohan123@@') {
+            // if (true) {
+                // alert('Đăng nhập thành công!');
+                window.location.href = 'home_page.html'; //Thay đổi URL này thành trang bạn muốn chuyển hướng đến
+            } else {
+                alert('Thông tin đăng nhập không hợp lệ!');
+            }
+        });
+    </script>
+
+</body>
+</html>
