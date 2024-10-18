@@ -27,6 +27,17 @@
                     <div class="button-detail">Xem thông tin chi tiết</div>
                 </div>
             </div>
+
+            <div class="button-container">
+                <div class="button" onclick="navigateToLichHoc('hoc_phi_page.html')">
+                    Học phí
+                    <div class="button-detail">Xem thông tin chi tiết</div>
+                </div>
+                <div class="button" onclick="">
+                    Thông tin thêm
+                    <div class="button-detail">Xem thông tin chi tiết</div>
+                </div>
+            </div>
         </div>
     </main> 
 
@@ -43,14 +54,14 @@
         });
 
         function navigateToLichHoc(url) {
-            // window.location.href = url;
-            // alert('lichHoc');
             window.location.href = url;
         }
 
         function navigateToKQHoc(url) {
-            // window.location.href = url;
-            // alert('KQ Hoc');
+            window.location.href = url;
+        }
+
+        function navigateToHocPhi(url) {
             window.location.href = url;
         }
     </script>
